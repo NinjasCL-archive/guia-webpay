@@ -1,0 +1,16 @@
+IDCOMERCIO = 597026007976
+MEDCOM = 1
+TBK_KEY_ID = 101
+PARAMVERIFCOM = 1
+URLCGICOM =
+SERVERCOM =
+PORTCOM = 80
+WHITELISTCOM = ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789./:=&?_
+HOST =
+WPORT = 80
+URLCGITRA = /filtroUnificado/bp_revision.cgi
+URLCGIMEDTRA = /filtroUnificado/bp_validacion.cgi
+SERVERTRA = https://certificacion.webpay.cl
+PORTTRA = 6443
+PREFIJO_CONF_TR = HTML_
+HTML_TR_NORMAL =

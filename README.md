@@ -9,7 +9,7 @@ Autor: Camilo Castro <camilo@cervezapps.cl>
 Versión: 1.0.0
 
 ## Licencia
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Guía de Webpay</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="www.cervezapps.cl" property="cc:attributionName" rel="cc:attributionURL">Camilo Castro</a> se distribuye bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Guía de Webpay</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.cervezapps.cl" property="cc:attributionName" rel="cc:attributionURL">Camilo Castro</a> se distribuye bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
 
 ## Requisitos
 * Servidor Linux
@@ -23,11 +23,13 @@ Versión: 1.0.0
 Primero se debe descomprimir el archivo entregado por transbank, entre todos habrá un directorio llamado *cgi-bin*, éste será el que se debe subir (en modo BINARIO). La forma más efectiva es comprimir ésta carpeta, subirla comprimida y descomprimirla en el mismo servidor.
 
 <center> <img src="img/1/fig01.png"> </center>
+
 					Figura 1: Contenidos del KCC Linux 32 Bit		
 
 &nbsp;
    
 <center><img src="img/1/fig02.png"></center>
+
 						Figura 2: Contenidos de cgi-bin	
 Debemos crear un archivo llamado *webpay.zip* con los contenidos del directorio cgi-bin.
 						
@@ -86,17 +88,20 @@ else
 Ahora se debe subir los archivos al servidor, se recomienda tener un directorio con los archivos *webpay.zip* y *unzip.php* para mayor organización.
 
 <center><img src="img/1/fig03.png"></center>
+
 				Figura 3: Contenidos del directorio webpay
 				
 Una vez que se suban se verán de la siguiente forma:
 
 <center><img src="img/1/fig04.png"></center>
+
 				Figura 4: Archivos subidos en el servidor
 				
 Luego se debe ejecutar el script *unzip.php* en el servidor
 				
 
 <center><img src="img/1/fig05.png"></center>
+
 				Figura 5: Ejecución del script unzip.php
 				
 El contenido del directorio webpay en el servidor quedaría de la siguiente forma:
@@ -106,17 +111,20 @@ El contenido del directorio webpay en el servidor quedaría de la siguiente form
 Finalmente se deben mover los archivos al directorio cgi-bin del servidor y otorgar permisos 755.
 
 <center><img src="img/1/fig07.png"></center>
+
 		  Figura 7: Contenidos del directorio cgi-bin del servidor
 		  
 		  
 Una vez copiados los archivos se deben aplicar los permisos 755 a todo el directorio cgi-bin (asumiendo que solamente tenemos webpay en dicho directorio).		  
 
 <center><img src="img/1/fig08.png"></center>
+
 		  Figura 8: Permisos aplicados al directorio cgi-bin
 
 Una vez hecho esto, solamente queda configurar webpay. Al visitar la url tbk_bp_pago.cgi debería aparecer algo como lo siguiente:
 
 <center><img src="img/1/fig09.png"></center>
+
 		   Figura 9: Ejecución de tbk_bp_pago.cgi sin configurar
 		   
 ### Solución de errores
@@ -285,6 +293,7 @@ Ejemplo de Configuración
 El archivo *tbk_config.dat* proporcionado por Transbank contiene un caracter no visible (CTRL_M) que causa el siguiente error:
 
 <center><img src="img/1/fig10.png"></center>
+
 			Figura 10: Error causado por caracter no visible
 
 Para solucionarlo se deben ejecutar los siguientes comandos en una terminal:
@@ -462,6 +471,7 @@ foreach($md5s as $file => $hash)
 ```
 
 <center><img src="img/1/fig11.png"></center>
+
 			Figura 11: Ejecución de Archivo md5check.php
 
 ###Instalación Usando SSH
@@ -615,6 +625,7 @@ HTML_TR_NORMAL = http://cervezapps.cl/webpay/cierre.php
 Una vez configurado y ejecutando los scripts del comercio se debería ver lo siguiente:
 
 <center><img src="img/1/fig12.png"></center>
+
 			Figura 12: Inicio Sistema Webpay post configuración
 			
 **Nota**: Existe una variable de configuración llamada *TBK_REFERER*, ésta no debe ser incluida en *tbk_config.dat* o causará un error de conexión.
@@ -751,6 +762,7 @@ El generador de llaves se debe descargar desde [https://www.transbank.cl/public/
 
 y tendrá los siguientes archivos:
 <center><img src="img/1/fig13.png"></center>
+
 			Figura 13: Contenidos de generador-llaves.rar
 
 El archivo *Leeme.txt* contiene instrucciones sobre la generación de las claves y los correos donde se debe enviar posteriormente *publica.pem*. Tambíen contiene el archivo *tbk_public_key.pem* que debemos usarlo para pasar a producción el sitio.
@@ -761,6 +773,7 @@ Para generar las llaves debemos abrir el archivo genkey.exe e introducir el cód
 > El generador de llaves dice KCC 5.0 pero servirá de todas formas para el KCC 6.0
 
 <center><img src="img/1/fig14.png"></center>
+
 						Figura 14. genkey.exe
 
 Una vez ejecutado generará dos archivos	

@@ -643,13 +643,14 @@ Ahora Webpay esta configurado para realizar las pruebas. Éstas son algunas de l
 ## Lista de Servidores 
 A continuación se mostrará un listado de servidores que se han probado para instalar el KCC. Se recomienda un VPS para tener control total del sistema, de preferencia hospedado en servidores extranjeros, ya que los proveedores de hosting nacionales tienden a tener poco ancho de banda internacional y un centro de ayuda al cliente bastante mejorable. Ninguno de estos servidores estan relacionados con el autor, simplemente son un listado donde se ha comprobado el correcto funcionamiento del KCC.
 	
-**Actualizado al 9 de abril del 2014**
+**Actualizado al 23 de abril del 2014**
 	
 La siguiente es un listado donde se ha instalado exitosamente el KCC. Se debe instalar el KCC correspondiente a la aquitectura del servidor.
 
 Hosting | Características | Comentario
 ------------ | ------------- | ------------
 [Centroclick](http://www.centroclick.com)|Plan Básico Linux 32 Shared (CLP $6.000)|Hosting usado para la creación de ésta guía.|
+[HostGator](http://www.hostgator.com) | Hatchling Plan (USD $3.96)| Plan Básico de pago mensual
 [HostGator](http://www.hostgator.com) | VPS Level 3 Linux 64 (USD $49.95) | Plan de coste mensual, acceso total sin restricciones a la configuración del servidor. 
 
 **Nota**

@@ -41,7 +41,7 @@ En la tabla 1 se detallan las características de cada uno.
 |En servidores de la tienda| En servidores de Transbank|
 | No permite *OneClick*| Permite utilizar *OneClick*|
 
-                           Tabla 1: KCC vs SOAP
+                           	Tabla 1: KCC vs SOAP
 
 ### ¿Cúal Usar?
 Como se pudo apreciar en la Tabla 1, KCC sirve para tiendas pequeñas que necesiten vender productos con sistemas pre existentes como [WooComerce](http://www.woothemes.com/woocommerce/) u [OpenCart](http://www.opencart.com/). En Contraste, SOAP sirve para soluciones más complejas y elaboradas que deban integrarse en otros entornos que no sean Web, o que necesiten de la característica *OneClick*. Ambas guías están disponibles para su lectura.
@@ -55,17 +55,23 @@ Diversas empresas han aprovechado la característica *OneClick* de Transbank. En
 ##### Copec
 La empresa Copec, la cual se especializa en la venta de combustibles para vehículos motorizados, ha desarrollado una aplicación para Android e iPhone. Esta aplicación permite pagar la carga de combustible sin necesidad de utilizar las tarjetas de crédito o débito, evitando el posible riesgo de clonación de tarjetas.
 
-Para más información visitar: https://www.pagoclick.cl/
+Para más información visitar:
+
+https://www.pagoclick.cl/
 
 ##### Groupon
 Groupon, empresa dedicada a la venta online de cupones de descuento para productos y servicios, permite a sus clientes pagar con tarjetas de crédito bancarias usando Webpay desde Internet. Sin embargo para clientes que compran en forma recurrente resulta poco cómodo y ágil ingresar los datos de su tarjeta y autenticarse con su banco en cada compra realizada. Por lo que han implementado la opción *OneClick* para agilizar el pago de las compras a dichos clientes.
 
-Para más información visitar: http://www.groupon.cl/
+Para más información visitar:
+
+http://www.groupon.cl/
 
 ##### Virgin Mobile Chile
 La empresa Virgin Mobile, dedicada a los servicios de telefonía celular, permite a sus usuarios recargar saldo mediante un "*twit*" en la red social twitter. Para esto utiliza los servicios de la empresa UANBAI, la cual integra *OneClick*.
 
 Para más información visitar:
+
 http://www.virginmobile.cl/recarga-en-redes-sociales
+
 https://www.uanbai.com/
 

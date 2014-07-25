@@ -1,4 +1,4 @@
-#Guía de instalación WebPay en Linux
+#Guía de instalación WebPay KCC en Linux
 Una pequeña guía para instalar el sistema de pago de Transbank.
 La instalación de webpay que se detalla a continuación se ha probado exitosamente en un servidor compartido (shared hosting) con Linux.
 

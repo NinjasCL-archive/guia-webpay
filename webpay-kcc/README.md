@@ -153,9 +153,15 @@ Para saber la arquitectura del servidor se debe ejecutar el siguiente comando:
 
 	$ uname -m
 
+**Nota**
+
+> Usar el KCC Linux 32 en Linux 64 causará error. Siempre usar el KCC correspondiente a la arquitectura del servidor.
+
+
+
 **Error 283**
 
-En ocaciones puede ocurrir que aparezca el *Error 283*, Este se genera por que se modificó la llave *privada.pem* en el servidor del comercio.
+En ocaciones puede ocurrir que aparezca el *Error 283*, Este se genera por que se modificó la llave *privada.pem* en el servidor del comercio. Puede también ocurrir si el contenido de los archivos pem esta corrupto. La solución mas simple es modificar el contenido de los archivos con un editor de texto plano y escribir el contenido correcto.
 
 <center><img src="img/1/error283.png"></center>
 

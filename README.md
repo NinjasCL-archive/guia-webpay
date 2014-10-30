@@ -5,7 +5,7 @@ Fecha: 25 de Julio de 2014
 
 Autor: Camilo Castro <camilo@cervezapps.cl>
 
-Versión: 1.1.0
+Versión: 1.1.1
 
 ## Licencia
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Guía de Webpay</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.cervezapps.cl" property="cc:attributionName" rel="cc:attributionURL">Camilo Castro</a> se distribuye bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
@@ -34,14 +34,14 @@ En la tabla 1 se detallan las características de cada uno.
 
 | KCC | SOAP |
 |--------|--------|
-|Existen softwares de integración con la mayoría de los sistemas de e-commerce como OpenCart, WooComerce y Magento.        |   Se debe programar la integración a medida, aún no existen integraciones "llegar y usar".     |
+|Existen softwares de integración con la mayoría de los sistemas de e-commerce como OpenCart, WooComerce, Prestashop y Magento.        |   Se debe programar la integración a medida, aún no existen integraciones "llegar y usar".     |
 | Solamente funciona en entornos Web.      |    Puede ser configurado para cualquier entorno, ya sea Web, Móvil o Escritorio.   |
 |    Relativamente sencillo de implementar.    |        Requiere conocimientos técnicos avanzados para su implementacion.|
 |Actualización Manual| Actualización Automática|
 |En servidores de la tienda| En servidores de Transbank|
 | No permite *OneClick*| Permite utilizar *OneClick*|
 |Soporte 24/7 vía email o teléfono| Soporte en horarios de oficina solo vía email|
-|Disponibilidad de documentación y archivos para prueba sin necesidad de contrato| Documentación y archivos solo mediante contrato previo|
+|Disponibilidad de documentación y archivos para prueba sin necesidad de contrato| Documentación y archivos sólo mediante contrato previo.|
 
                            	Tabla 1: KCC vs SOAP
 

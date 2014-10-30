@@ -40,6 +40,8 @@ En la tabla 1 se detallan las características de cada uno.
 |Actualización Manual| Actualización Automática|
 |En servidores de la tienda| En servidores de Transbank|
 | No permite *OneClick*| Permite utilizar *OneClick*|
+|Soporte 24/7 vía email o teléfono| Soporte en horarios de oficina solo vía email|
+|Disponibilidad de documentación y archivos para prueba sin necesidad de contrato| Documentación y archivos solo mediante contrato previo|
 
                            	Tabla 1: KCC vs SOAP
 

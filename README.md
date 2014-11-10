@@ -77,3 +77,12 @@ http://www.virginmobile.cl/recarga-en-redes-sociales
 
 https://www.uanbai.com/
 
+## Otros Materiales
+
+El curso http://www.chileforma.cl/ch/curso/webpay ofrece formación
+presencial para personas y empresas sobre Webpay KCC.
+
+**Nota 1**: El autor no tiene relación con alguna ChileForma
+
+**Nota 2**: Solo incluye KCC. Sin versión SOAP.
+

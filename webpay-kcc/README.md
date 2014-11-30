@@ -163,6 +163,10 @@ Para saber la arquitectura del servidor se debe ejecutar el siguiente comando:
 
 En ocaciones puede ocurrir que aparezca el *Error 283*, Este se genera por que se modificó la llave *privada.pem* en el servidor del comercio. Puede también ocurrir si el contenido de los archivos pem esta corrupto. La solución mas simple es modificar el contenido de los archivos con un editor de texto plano y escribir el contenido correcto.
 
+*Nota*
+
+> Los certificados incluidos en el comprimido disponible en la página oficial de Transbank están corruptos. Se deben reemplazar por certificados válidos.
+
 <center><img src="img/1/error283.png"></center>
 
 								Error 283
@@ -174,6 +178,8 @@ Se debe verificar que los archivos
 	maestros/tbk_public_key101prod.pem
 	
 estén correctos, pertenezcan al usuario Apache y que los permisos que deben ser 755. Como último recurso variar el valor de TBK_KEY_ID entre 100 (1024 bits) o 101 (4096 (bits) según corresponda.
+
+Los siguientes certificados fueron obtenidos desde el manual de instalación y son los que deben usarse en el ambiente de certificación.
 
 El contenido de *privada.pem* en certificación es:
 
@@ -318,12 +324,15 @@ Adicionalmente se proporciona un archivo de configuración limpio en la carpeta 
 Luego de ser corregido, el archivo *tbk_config.dat* debe ser subido al servidor en *cgi/datos/* reemplazando al anterior.
 
 ### Instalación en Servidores sin Exec
-La mayoría de los servidores tendrán habilitada la función exec de php, para el caso de los que no la tengan,  existe la alternativa de realizar los pasos a continuación.		   
+La mayoría de los servidores tendrán habilitada la función exec de php, para el caso de los que no la tengan,  existe la alternativa de realizar los pasos a continuación.
+
+Es importante mencionar que cuando un servidor no tenga habilitada la función *exec* la página de cierre no será ejecutada al ser llamada por Transbank, ya que normalmente la configuración de seguridad bloqueará la ejecución del script.
 
 #### Requisitos
 * CGI Perl
 * Acceso FTP
 * No tener función exec en PHP.
+* Curl (Si es que file_get_contents esta bloqueado)
 
 #### Código
 El siguiente código debe llamarse *chkmac.cgi* y ser almacenado en el directorio *cgi-bin* donde se encuentra el KCC. Se le deben dar permisos 755.
@@ -366,6 +375,16 @@ Para poder ejecutar el CGI dentro de PHP se debe llamar a una url del tipo local
 </dl>
 
 #### Uso
+Si la función *file_get_contents* está bloqueada se debe utilizar cURL. 
+
+Algunos links de interés.
+
+http://www.phpgang.com/replace-file_get_contentsfopen-with-curl_30.html
+http://stackoverflow.com/questions/7893211/need-to-change-codes-file-get-contents-with-curl-code
+http://phpcode.mypapit.net/how-to-solve-file_get_contents-and-file-php-errors/45/
+http://webddr.net/tips-and-tricks/curl-replacement-for-file_get_contents/
+
+Para ejecutar el script usando perl y file_get_contents
 
 ```
 $result[0] = file_get_contents("http://localhost/web/cgi-bin/chkmac.cgi?passwd=contraseña&filename=$filename")
@@ -657,11 +676,12 @@ A continuación se mostrará un listado de servidores que se han probado para in
 	
 La siguiente es un listado donde se ha instalado exitosamente el KCC. Se debe instalar el KCC correspondiente a la aquitectura del servidor.
 
-Hosting | Características | Comentario
+Hosting | Características | Permite Exec | Comentario
 ------------ | ------------- | ------------
-[Centroclick](http://www.centroclick.com)|Plan Básico Linux 32 Shared (CLP $6.000)|Hosting usado para la creación de ésta guía.|
-[HostGator](http://www.hostgator.com) | Hatchling Plan (USD $3.96)| Plan Básico de pago mensual
-[HostGator](http://www.hostgator.com) | VPS Level 3 Linux 64 (USD $49.95) | Plan de coste mensual, acceso total sin restricciones a la configuración del servidor. 
+[Centroclick](http://www.centroclick.com)|Plan Básico Linux 64 Shared (CLP $6.000)| No | Hosting usado para la creación de ésta guía.|
+[HostGator](http://www.hostgator.com) | Hatchling Plan (USD $3.96)| Sí | Plan Básico de pago mensual
+[HostGator](http://www.hostgator.com) | VPS Level 3 Linux 64 (USD $49.95) |Sí | Plan de coste mensual, acceso total sin restricciones a la configuración del servidor. 
+[SilverHost](https://www.silverhost.cl/) | Plan Básico (CLP $18.000) | Sí | Plan Básico de pago anual
 
 **Nota**
 > Existen proveedores gratuitos como [Heroku](http://www.heroku.com) y [OpenShift](http://www.openshift.com) que permitirían configurar una tienda con webpay en teoría. Pero no se han realizado pruebas para comprobar su validez.

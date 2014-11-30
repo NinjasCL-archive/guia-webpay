@@ -677,7 +677,7 @@ A continuación se mostrará un listado de servidores que se han probado para in
 La siguiente es un listado donde se ha instalado exitosamente el KCC. Se debe instalar el KCC correspondiente a la aquitectura del servidor.
 
 Hosting | Características | Permite Exec | Comentario
------------- | ------------- | ------------
+------------ | ------------- | ------------ | -----------------
 [Centroclick](http://www.centroclick.com)|Plan Básico Linux 64 Shared (CLP $6.000)| No | Hosting usado para la creación de ésta guía.|
 [HostGator](http://www.hostgator.com) | Hatchling Plan (USD $3.96)| Sí | Plan Básico de pago mensual
 [HostGator](http://www.hostgator.com) | VPS Level 3 Linux 64 (USD $49.95) |Sí | Plan de coste mensual, acceso total sin restricciones a la configuración del servidor. 

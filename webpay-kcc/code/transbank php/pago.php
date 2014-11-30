@@ -1,7 +1,7 @@
 <?php
 $TBK_MONTO="10000";
 $TBK_ORDEN_COMPRA = date("Ymdhis");
-$TBK_ID_SESION = date("Ymdhis")
+$TBK_ID_SESION = date("Ymdhis");
 /****************** CONFIGURACION *******************/
 $TBK_TIPO_TRANSACCION = "TR_NORMAL";
 $TBK_URL_EXITO = "http://IP_SERVIDOR/TIENDA_TEST/html/exito.php";

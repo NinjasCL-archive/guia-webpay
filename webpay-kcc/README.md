@@ -830,6 +830,18 @@ Según el manual de Transbank para generar las claves pem en Linux se deben util
 
 ```
 
+Tambíén se puede ejecutar el programa *genkey.exe* usando la aplicación *wine*.
+
+```
+$ sudo aptitude install wine
+$ wine genkey.exe
+```
+La versión probada es la wine-1.4.1
+bajo un sistema debian wheezy.
+
+### Mac
+Para usar el programa *genkey.exe* en Mac. Hay distintas alternativas, desde una máquina virtual con Windows. usar Bootcamp o Parallels. Pero la opción más simple sería usando *wine*. La siguiente es una guía en inglés que explica cómo instalar *wine* en Mac. [http://www.davidbaumgold.com/tutorials/wine-mac/](http://www.davidbaumgold.com/tutorials/wine-mac/). 
+
 ### Configuración Final
 Finalmente se debe reconfigurar el sitio para utilizar las llaves generadas anteriormente.
 

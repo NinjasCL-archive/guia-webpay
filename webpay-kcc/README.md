@@ -929,3 +929,18 @@ El proceso de compra está ejemplificado con el siguiente diagrama de actividade
 
 			Figura 15: Diagrama de Actividades del Proceso de Compra. Fuente: Elaboración Propia.
 
+** Nota :**
+El paso de verificación de monto se debe agregar dos ceros (00) al monto original del carro. Ya que Transbank entrega el monto con dos ceros adicionales.
+
+Ejemplo
+
+```php
+
+$total_order_amount = $cart->getOrderTotalAmount();
+
+$total_order_amount_formatted = $total_order_amount . '00';
+
+if ($total_order_amount_formatted == $tbk_total_amount) {
+	log("Amounts are Equal");
+}
+```

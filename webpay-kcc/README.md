@@ -825,7 +825,7 @@ Según el manual de Transbank para generar las claves pem en Linux se deben util
 
 
 ```
-￼# openssl genrsa -out privada.pem 4096
+# openssl genrsa -out privada.pem 4096
 # openssl rsa -in privada.pem -pubout -out publica.pem
 
 ```
@@ -919,5 +919,13 @@ El logo debe tener las siguientes características:
 **Formato**: GIF 
 **Dimensiones**: 130 x 59 px.
 
+## Anexos
+### Anexo A: Proceso de Compra
+El proceso de compra está ejemplificado con el siguiente diagrama de actividades. Este proceso es iniciado luego de que la persona ha comprado un artículo e ingresado sus datos bancarios. Es cuando Transbank informa a la tienda si una orden de compra fue exitosamente pagada o no.
 
+[Ver en Tamaño Completo](img/1/fig15.png)
+
+![Diagrama de Actividades Proceso de Compra](img/1/fig15.png)
+
+			Figura 15: Diagrama de Actividades del Proceso de Compra. Fuente: Elaboración Propia.
 

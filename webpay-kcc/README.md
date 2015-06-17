@@ -929,7 +929,8 @@ El proceso de compra está ejemplificado con el siguiente diagrama de actividade
 
 			Figura 15: Diagrama de Actividades del Proceso de Compra. Fuente: Elaboración Propia.
 
-** Nota :**
+**Nota :**
+
 El paso de verificación de monto se debe agregar dos ceros (00) al monto original del carro. Ya que Transbank entrega el monto con dos ceros adicionales.
 
 Ejemplo

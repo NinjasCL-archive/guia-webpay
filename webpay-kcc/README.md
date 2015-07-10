@@ -945,3 +945,30 @@ if ($total_order_amount_formatted == $tbk_total_amount) {
 	log("Amounts are Equal");
 }
 ```
+
+### Anexo B: Orden de los parámetros de Validación de MAC en Transacción Tipo Mall
+La transacción tipo Mall recibe parámetros con diferentes nombres que la transacción normal, para la validación del MAC de tipo Mall se requiere que el archivo temporal tenga escrito los parámetros en el siguiente orden: 
+
+	1) TBK_TIPO_TRANSACCION
+	2) TBK_RESPUESTA
+	3) TBK_MONTO
+	4) TBK_ORDEN_COMPRA
+	6) TBK_FINAL_NUMERO_TARJETA
+	7) TBK_FECHA_CONTABLE
+	8) TBK_FECHA_TRANSACCION
+	9) TBK_HORA_TRANSACCION
+	10) TBK_ID_SESION
+	11) TBK_ID_TRANSACCION
+	12) TBK_COD_AUT_M001
+	13) TBK_TIPO_PAGO_M001
+	14) TBK_NUMERO_CUOTAS_M001
+	15) TBK_COD_RESP_M001
+	16) TBK_MONTO_TIENDA_M001
+	17) TBK_ORDEN_TIENDA_M001
+	18) TBK_VCI_M001
+	19) TBK_VCI
+	20) TBK_MAC
+
+
+Ejemplo:
+	TBK_TIPO_TRANSACCION=TR_MALL&TBK_RESPUESTA=0...

@@ -1,11 +1,11 @@
 # Guía de WebPay
 Este repositorio contiene distintas guías para aprender a utilizar el sistema de pagos WebPay. Este documento se está creando de forma paulatina, cualquier contribución es bienvenida.
 
-Fecha: Enero 2014, Mayo 2015
+Fecha: Enero 2014, Mayo, Septiembre 2015
 
 Autor: Camilo Castro <camilo@cervezapps.cl>
 
-Versión: 1.1.3
+Versión: 1.1.4
 
 ## Licencia
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Guía de Webpay</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.cervezapps.cl" property="cc:attributionName" rel="cc:attributionURL">Camilo Castro</a> se distribuye bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
@@ -79,10 +79,22 @@ https://www.uanbai.com/
 
 ## Otros Materiales
 
+### ChileForma
 El curso http://www.chileforma.cl/ch/curso/webpay ofrece formación
 presencial para personas y empresas sobre Webpay KCC.
 
+Valor Aproximado : CLP $500.000 (app 724,5 dólares)
 **Nota 1**: El autor no tiene relación con alguna ChileForma
 
 **Nota 2**: Solo incluye KCC. Sin versión SOAP.
+
+### Transbank Developers
+Sitio web con información sobre la integración de Webpay. Permite obtener un certificado digital sobre conocimientos de webpay.
+
+http://www.transbankdevelopers.cl/
+
+### Aprende Webpay
+Guía de pago (CLP $16.000, USD $23) sobre Webpay.
+
+http://www.tuspagosweb.com/integrar-webpay.html
 

@@ -10,6 +10,17 @@ Versión: 1.1.4
 ## Licencia
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Guía de Webpay</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.cervezapps.cl" property="cc:attributionName" rel="cc:attributionURL">Camilo Castro</a> se distribuye bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
 
+
+Safe Creative
+
+Identificador: 1509255234196 
+
+<a href="http://www.safecreative.org/work/1509255234196-guia-de-webpay" target="_blank">
+<span>Guía de WebPay</span> -
+<span>CC by-nc-sa 4.0</span> -
+<span>Camilo Castro</span>
+</a>
+
 ## Estructura del Repositorio
 La estructura del repositorio es la siguiente:
 

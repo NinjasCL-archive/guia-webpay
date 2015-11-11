@@ -719,61 +719,43 @@ Una vez configurado el KCC y esté funcionando con las claves de prueba se debe 
 * Página que explique la política de devoluciones.
 * Página que explique la forma de entrega.
 
-## Paso 1 - Documento de Pre Certificación
-Se debe llenar el documento word llamado *"Ficha Certificación Webpay 6.docx"* y enviarlo a *soporte@transbank.cl* solicitando comenzar el proceso de certificación.
+## Paso 1 - Documento de Pre - Certificación
+Transbank ha complicado el proceso de certificación exigiendo a los comercios enviar capturas de pantallas de diversas pruebas en un solo archivo pdf. Es necesario llenar un documento llamado *Evidencia Comercio.docx*, el cual está dentro del archivo descargable desde [Transbank Descargas](https://www.transbank.cl/public/productos-y-servicios/webpay/#descargas). En éste caso dentro del archivo llamado *linux_64_6.0.2.zip*. Dentro del documento se solicitan diferentes datos y responder una serie de preguntas. Una vez llenado se debe exportar en formato *pdf* y ser enviado a *soporte@transbank.cl* con una copia al contacto comercial. Finalmente se deben adjuntar los archivos generados en el proceso de compra llamados *tbk_bitacora* y *tbk_evn* correspondientes a la fecha donde se solicita la certificación.
 
-### Datos Necesarios
-Los datos solicitados en el documento son los siguientes:
+## Paso 2 - Llenar Documento Evidencia Comercio
+El contenido del documento solicita la información mostrada a continuación.
 
-#### Datos del Comercio 
-Dato | Descripción | Ejemplo
------------- | ------------- | ------------
-Motivo de certificación|La razón de por qué se solicita la certificación| El comercio ha firmado contrato Webpay con Transbank, realizó la integración del kit de desarrollo y quiere habilitar las ventas a través de dicho producto por primera vez.|
-Nombre de fantasía|Nombre de fantasía de la empresa que firmó contrato con Transbank.|Cervezapps|
-Rut del Comercio|Rut de la empresa que firmó contrato con Transbank.|7039391838-5|
-Código de Comercio Pesos|Código de Comercio Otorgado por Transbank al momento de firmar contrato.|388381282|
-Código de Comercio Dólar|Código de Comercio Otorgado por Transbank al momento de firmar contrato.|388381282|
+### Información de Comercio
+- Nombre Comercio
+- Url Comercio
+- Rubro Comercio
+- Rut Comercio
+- Código Comercio
 
-#### Datos del Representante
+### Información Contacto Comercial del Comercio
+- Nombre
+- Mail
+- Teléfono
 
-Dato | Descripción | Ejemplo
------------- | ------------- | ------------
-Nombre|Nombre del Representante Legal de la empresa| Camilo Castro|
-Email | Correo del Representante Legal de la empresa | camilo@cervezapps.cl |
-Teléfono | Teléfono del Representante Legal de la empresa | +569 000 000 000 |
+### Información de Contacto Técnico del Comercio
+- Nombre
+- Mail 
+- Teléfono
 
-#### Datos del Contacto Técnico
-El contacto técnico es la persona encargada de integrar Webpay al comercio.
+### Adicionalmente se deben responder una serie de preguntas
 
-Dato | Descripción | Ejemplo
------------- | ------------- | ------------
-Cont. Técnico|Nombre del Contacto Técnico|Camilo Castro|
-Teléfono | Teléfono del Contacto Técnico|+569 000 000 000 |
-Email|Email del Contacto Técnico|camilo@cervezapps.cl|
-URL Pruebas| Sitio web del comercio| http://www.cervezapps.cl/shop
-Plataforma| Arquitectura donde funciona el KCC (Linux 32, Linux 64, Windows 32, Windows 64) | Linux 64
-URL Completa de la Página de Cierre | URL con el mismo valor puesto en HTML_TR_NORMAL.|http://cervezapps.cl/webpay/confirmar.php |
-Datos de Prueba |Datos necesarios para comprobar el correcto funcionamiento del KCC. Incluir usuarios y contraseñas de prueba y rutas relacionadas.| Usuario:mikeller Contraseña:cerveza1234 Url: http://cervezapps.cl/shop/login
-Comentarios|Algun dato importante a mencionar.|Debe comprar como mínimo 5 productos para activar WebPay.|
+- Flujo de Pago exitoso sin cuotas.
+- Flujo de Pago Exitoso con cuotas.
+- Flujo de Pago Exitoso debito.
+- Flujo de pago fracaso.
+- Validación del certificado / Checkmac (Página de Cierre).
+- Validación de Orden de Compra.
+- Validación de Monto.
 
-## Paso 2 - Envío de Logs
-Una vez que transbank realizó las pruebas pertinentes se debe crear un comprimido con los siguientes archivos y enviarlo a *soporte@transbank.cl* :
 
-* cgi-bin/datos/tbk_config.dat
-* cgi-bin/log/tbk_bitacora_TR_NORMAL_MMdd.log
-* cgi-bin/log/TBK_EVNaaaMMdd.log
-* El código fuente de la página de cierre. (Ej: xt_compra.php)
+Para facilitar la entrega de datos se ha creado una plantilla de ejemplo disponible en [examples/Evidencia Comercio](/examples/) en formato pdf, docx y pages. La cual contiene más detalles sobre como llenar la información y responder las preguntas.
 
-Donde MMdd es Mes/Día y aaaaMMdd es Año/Mes/Día
 
-Ejemplo para el 01 de Abril del 2014
-
-	TBK_EVN20140401.log
-	tbk_bitacora_TR_NORMAL_0401.log
-	
-**Nota**
-> El comprimido debe ser subido al servidor donde se encuentra la página web (Ej: http://cervezapps.cl/webpay.zip). Y enviarse como URL en el correo. No debe adjuntarse en el email.
-	
 Una vez que soporte pruebe los datos enviarán al sitio a certificación, proceso que tardará entre 24 a 48 horas.
 
 ### Envió a Certificación

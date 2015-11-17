@@ -1,0 +1,41 @@
+<!doctype html>
+<!--
+https://github.com/clsource/guia-webpay/
+Validación de Orden de Compra
+
+Tome los datos capturados, vuelva a enviarlos mediante un formulario HTML simple a su tbk_bp_pago.cgi, con el objeto de que se levante nuevamente el Formulario de Webpay Plus que le estamos solicitando. Pague esta transacción normalmente utilizando la  tarjeta VISA de pruebas y el resultado que se espera es que se despliegue su página de rechazo con el numero de orden de compra correspondiente.
+-->
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Evidencia 6 : Prueba Validación Orden</title>
+</head>
+<body>
+	<h1>Validación de Orden Duplicada</h1>
+	
+	<p>Tome los datos capturados, vuelva a enviarlos mediante un formulario HTML simple a su tbk_bp_pago.cgi, con el objeto de que se levante nuevamente el Formulario de Webpay Plus que le estamos solicitando. Pague esta transacción normalmente utilizando la  tarjeta VISA de pruebas y el resultado que se espera es que se despliegue su página de rechazo con el numero de orden de compra correspondiente.</p>
+
+	<form method="post" action="/cgi-bin/tbk_bp_pago.cgi">
+
+		<input type="text" name="TBK_TIPO_TRANSACCION" value="" placeholder="TBK_TIPO_TRANSACCION">
+		<br/>
+
+		<input type="text" name="TBK_ORDEN_COMPRA" value="" placeholder="TBK_ORDEN_COMPRA">
+		<br/>
+
+		<input type="text" name="TBK_MONTO" value="" placeholder="TBK_MONTO">
+		<br/>
+
+		<input type="text" name="TBK_ID_SESION" value="" placeholder="TBK_ID_SESION">
+		<br/>
+
+		<input type="text" name="TBK_URL_EXITO" value="" placeholder="TBK_URL_EXITO">
+		<br/>
+
+		<input type="text" name="TBK_URL_FRACASO" value="" placeholder="TBK_URL_FRACASO">
+		<br/>
+
+		<button type="submit">Enviar</button>
+	</form>
+</body>
+</html>

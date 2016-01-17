@@ -159,8 +159,9 @@ Para saber la arquitectura del servidor se debe ejecutar el siguiente comando:
 
 
 **Error 46**
+
 Este es un error que se produce por una mala configuración del kcc. Siempre mostrará la página de rechazo.
-Para solucionarlo simplemente se debe revisar que las rutas al directorio cgi estén bien configuradas en el archivo *datos/tbk_config.dat*.
+Para solucionarlo simplemente se debe revisar que las rutas hacia el directorio cgi estén bien configuradas en el archivo *datos/tbk_config.dat*. También puede ocurrir cuando las rutas están mal configuradas en el plugin del ecommerce usado.
 
 **Error 283**
 

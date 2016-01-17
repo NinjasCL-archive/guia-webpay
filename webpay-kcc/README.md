@@ -158,6 +158,9 @@ Para saber la arquitectura del servidor se debe ejecutar el siguiente comando:
 > Usar el KCC Linux 32 en Linux 64 causará error. Siempre usar el KCC correspondiente a la arquitectura del servidor.
 
 
+**Error 46**
+Este es un error que se produce por una mala configuración del kcc. Siempre mostrará la página de rechazo.
+Para solucionarlo simplemente se debe revisar que las rutas al directorio cgi estén bien configuradas en el archivo *datos/tbk_config.dat*.
 
 **Error 283**
 
@@ -322,6 +325,7 @@ Para solucionarlo se deben ejecutar los siguientes comandos en una terminal:
 Adicionalmente se proporciona un archivo de configuración limpio en la carpeta examples de éste tutorial. Tambíen podría ser creado un nuevo archivo en blanco con fin de línea tipo UNIX.
 
 Luego de ser corregido, el archivo *tbk_config.dat* debe ser subido al servidor en *cgi/datos/* reemplazando al anterior.
+
 
 ### Instalación en Servidores sin Exec
 La mayoría de los servidores tendrán habilitada la función exec de php, para el caso de los que no la tengan,  existe la alternativa de realizar los pasos a continuación.

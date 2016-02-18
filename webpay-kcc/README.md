@@ -268,8 +268,21 @@ Al ejecutar el comando file * dentro de maestros debe arrojar todas como tipo AS
 
  > privada.pem:         PEM RSA private key
  
+ **Importante**
+ 
+Se debe verificar que todos los archivos existan y tengan el nombre correcto
 
-Si se está en ambiente de producción la solución es generar nuevamente las llaves asimetricas y enviar la llave *publica.pem* a *soporte@transbank.cl* para que sea cargada en el servidor web de Transbank.
+```
+maestros/privada.pem
+maestros/tbk_public_key.pem
+maestros/tbk_public_key101prod.pem
+```
+
+Puede que el archivo *tbk_public_key1.pem* exista y el archivo *tbk_public_key101prod.pem* no. El archivo *tbk_public_key101prod.pem* siempre debe existir con el contenido expuesto en la guía más arriba.
+
+**Otras consideraciones**
+
+Si se está en ambiente de producción y todo lo demás ha fallado, la solución es generar nuevamente las llaves asimetricas y enviar la llave *publica.pem* a *soporte@transbank.cl* para que sea cargada en el servidor web de Transbank.
 
 **Mod Security**
 

@@ -974,3 +974,26 @@ La transacción tipo Mall recibe parámetros con diferentes nombres que la trans
 
 Ejemplo:
 	TBK_TIPO_TRANSACCION=TR_MALL&TBK_RESPUESTA=0...
+	
+### Anexo C: Cuentas para Ejecutar Pruebas
+Al hacer pruebas siempre se deben utilizar alguna de las cuentas establecidas en el manual. A continuación se copian los datos.
+
+Para autenticar, el usuario (RUT) a ingresar es **11.111.111-1** (nueve veces el número 1) y la clave es **123**.
+Una vez autenticados, dentro del emisor podrán aceptar ó rechazar la transacción.
+
+**Para pruebas con Tarjetas de Crédito**
+
+| * | VISA | MASTERCARD
+|--------|--------|--------|
+|Número de Tarjeta|4051885600446623|518605955959056|
+|Año Expiración| Cualquiera| Cualquiera       |
+|Mes Expiración|   Cualquiera     |    Cualquiera    |
+|CVV|  123     | 123 |
+|Resultado|     APROBADO   |  RECHAZADO      |
+
+**Para pruebas con RedCompra**
+
+| Número de Tarjeta| Resultado |
+|--------|--------|
+|   4051885600446623     |   APROBADO     |
+|     5186059559590568   |     RECHAZADO   |

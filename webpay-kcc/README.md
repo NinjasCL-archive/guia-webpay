@@ -997,3 +997,53 @@ Una vez autenticados, dentro del emisor podrán aceptar ó rechazar la transac
 |--------|--------|
 |   4051885600446623     |   APROBADO     |
 |     5186059559590568   |     RECHAZADO   |
+
+### Anexo D: Amazon EC2
+Webpay puede tener algunas consideraciones adicionales para funcionar bien en servidores hospedados en Amazon.
+
+#### Permisos de la VPC
+Primero hay que autorizar explicitamente las IPs de Transbank en la VPC. Con el fin de evitar cualquier bloqueo de las llamadas realizadas por Transbank.
+
+```
+Ambiente de Certificación
+200.10.12.55
+
+Ambiente de Producción
+200.10.14.162
+200.10.14.163
+200.10.12.162
+200.10.12.163
+200.10.14.34
+200.10.14.177
+```
+
+#### Configuración de la IP Pública
+La IP pública del servidor, la cual es usada en el archivo *tbk_config.dat* debe poder ser usada para llamar directamente a los archivos del cgi-bin.
+
+**Ejemplo**
+
+La llamada a la dirección
+*http://54.xxx.yyy.zzz/cgi-bin/tbk_bp_pago.cgi*
+debe mostrar un logo de Webpay y no un error de servidor como
+500 o 400.
+
+Esto se debe a que los servidores de Transbank toman la IP Pública y la llaman directamente para realizar la validación con *tbk_bp_resultado.cgi*
+
+**Archivo tbk_config.dat**
+
+Si Los contenidos del archivo son los siguientes
+
+```
+(...)
+URLCGICOM = http://www.ejemplo.com/cgi-bin/tbk_bp_resultado.cgi
+SERVERCOM = 54.xxx.yyy.zzz
+(...)
+```
+
+Se debe verificar que se pueda ejecutar ambas direcciones bajo la url y la ip.
+**http://www.ejemplo.com/cgi-bin/tbk_bp_resultado.cgi** y **http://54.xxx.yyy.zzz/cgi-bin/tbk_bp_resultado.cgi** 
+y ambas den un resultado correcto.
+
+
+
+

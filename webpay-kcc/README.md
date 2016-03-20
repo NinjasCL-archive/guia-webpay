@@ -1044,6 +1044,14 @@ Se debe verificar que se pueda ejecutar ambas direcciones bajo la url y la ip.
 **http://www.ejemplo.com/cgi-bin/tbk_bp_resultado.cgi** y **http://54.xxx.yyy.zzz/cgi-bin/tbk_bp_resultado.cgi** 
 y ambas den un resultado correcto.
 
+### Anexo E: Solución a comportamiento errático
 
+Cuando webpay lleva funcionando un tiempo considerable en el sitio (algunos años), puede que se presenten comportamientos erráticos en el sistema. Carros de compra no pagados, procesos no conclusos y otras eventualidades problemáticas. 
+Si bien las causas pueden ser diversas y ajenas al KCC, una posibilidad es que el directorio *cgi-bin/log* este saturado. Cuando existen demasiados archivos dentro del directorio *log* el KCC puede presentar comportamientos no deseados. La solución es mover estos archivos a un directorio nuevo y dejar limpio el directorio *log* para los nuevos logs.
 
+Para esto se deben mover los archivos a un nuevo directorio
+	
+	$ cd cgi-bin/log
+	$ mkdir backup
+	$ mv *.* backup
 

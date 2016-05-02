@@ -593,6 +593,11 @@ Webpay permite el pago utilizando el peso chileno (CLP) o dólar estado unidense
 ## Paso 2 - Configuración de WebPay
 Una vez instalados los archivos, se debe configurar webpay para su posterior utilización.
 
+### EZ Webpay Configurator
+[Ninjas.cl](http://www.ninjas.cl) ha creado un programa para ayudar a la configuración de este archivo.
+pueden descargarlo gratuitamente acá
+https://github.com/NinjasCL/EzWebpayConfigurator
+
 ### Archivo tbk_config.dat
 Éste archivo contiene la configuración más importante para el correcto funcionamiento de WebPay, se debe abrir en un editor de texto plano como Vim o Notepad ++. Esta ubicado en el directorio *cgi-bin/datos/* .
 

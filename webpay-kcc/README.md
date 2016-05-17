@@ -990,7 +990,7 @@ Una vez autenticados, dentro del emisor podrán aceptar ó rechazar la transac
 
 | * | VISA | MASTERCARD
 |--------|--------|--------|
-|Número de Tarjeta|4051885600446623|518605955959056|
+|Número de Tarjeta|4051885600446623|5186059559590568|
 |Año Expiración| Cualquiera| Cualquiera       |
 |Mes Expiración|   Cualquiera     |    Cualquiera    |
 |CVV|  123     | 123 |

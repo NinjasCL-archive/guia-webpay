@@ -765,6 +765,11 @@ El contenido del documento solicita la información mostrada a continuación.
 - Mail 
 - Teléfono
 
+### Información de Cuenta de Prueba
+- Usuario
+- Contraseña
+- URL de Login
+
 ### Adicionalmente se deben responder una serie de preguntas
 
 - Flujo de Pago exitoso sin cuotas.
@@ -791,6 +796,9 @@ Certificación tardará unos días en realizar las pruebas. Una vez finalizadas 
 
 **Nota**
 > El paso a producción no debe tomar más de 10 días o certificación anulará el proceso y deberá comenzar desde cero.
+
+**Nota2**
+> Para ahorrar tiempo es recomendable generar los archivos pem antes de enviar el zip a certificación. De esta forma podrán descargalo fácilmente más tarde.
 
 ### Generación de llaves
 

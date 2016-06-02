@@ -772,13 +772,13 @@ El contenido del documento solicita la información mostrada a continuación.
 
 ### Adicionalmente se deben responder una serie de preguntas
 
-- Flujo de Pago exitoso sin cuotas.
-- Flujo de Pago Exitoso con cuotas.
-- Flujo de Pago Exitoso debito.
-- Flujo de pago fracaso.
-- Validación del certificado / Checkmac (Página de Cierre).
-- Validación de Orden de Compra.
-- Validación de Monto.
+- Flujo Pago Exitoso Sin Cuotas  
+- Flujo Pago Exitoso 3 Cuotas Sin Interés
+- Flujo de Pago Exitoso 4 Cuotas (normales, con interés)
+- Flujo de Pago Exitoso con Tarjeta de Débito RedCompra
+- Flujo de Pago Fracaso con tarjeta de crédito MasterCard
+- Validación de Orden de Compra
+- Validación de Página de Cierre
 
 
 Para facilitar la entrega de datos se ha creado una plantilla de ejemplo disponible en [examples/Evidencia Comercio](examples/) en formato pdf, docx y pages. La cual contiene más detalles sobre como llenar la información y responder las preguntas.

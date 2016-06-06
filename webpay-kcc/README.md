@@ -910,6 +910,12 @@ HTML_TR_NORMAL = http://cervezapps.cl/webpay/cierre.php
 ## Paso 4 - Prueba Final
 Una vez configurado el sitio en producción se hará una prueba final para comprobar que todo este funcionando correctamente, una vez que Transbank informe que el comercio ha sido agregado se debe crear una compra.
 
+La prueba consiste en crear un producto de valor $10 CLP (10 pesos chilenos) y ejecutar una venta con un
+banco real.
+
+Se debe enviar a transbank una prueba de que el comercio efectua las ventas correctamente
+usando este producto de prueba.
+
 
 ## Paso 5 - Limpieza, Seguridad y Otros
 

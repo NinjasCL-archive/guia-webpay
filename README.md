@@ -96,7 +96,7 @@ presencial para personas y empresas sobre Webpay KCC.
 
 Valor Aproximado : CLP $500.000 (app 724,5 dólares)
 
-**Nota 1**: El autor no tiene relación con alguna ChileForma
+**Nota 1**: El autor no tiene relación alguna con ChileForma
 
 **Nota 2**: Solo incluye KCC. Sin versión SOAP.
 
@@ -110,5 +110,5 @@ Guía de pago (CLP $16.000, USD $23) sobre Webpay.
 
 http://www.tuspagosweb.com/integrar-webpay.html
 
-**Nota 1**: El autor no tiene relación con alguna Aprende Webpay
+**Nota 1**: El autor no tiene relación alguna con Aprende Webpay
 

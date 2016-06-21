@@ -96,7 +96,7 @@ presencial para personas y empresas sobre Webpay KCC.
 
 Valor Aproximado : CLP $500.000 (app 724,5 dólares)
 
-**Nota 1**: El autor no tiene relación con alguna ChileForma
+**Nota 1**: El autor no tiene relación alguna con ChileForma
 
 **Nota 2**: Solo incluye KCC. Sin versión SOAP.
 

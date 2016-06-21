@@ -110,5 +110,5 @@ Guía de pago (CLP $16.000, USD $23) sobre Webpay.
 
 http://www.tuspagosweb.com/integrar-webpay.html
 
-**Nota 1**: El autor no tiene relación con alguna Aprende Webpay
+**Nota 1**: El autor no tiene relación alguna con Aprende Webpay
 

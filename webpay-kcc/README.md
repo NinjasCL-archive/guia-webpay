@@ -1074,3 +1074,11 @@ Para esto se deben mover los archivos a un nuevo directorio
 	$ mkdir backup
 	$ mv *.* backup
 
+### Anexo D: Consideraciones al Pasar a Producción
+Se debe asegurar de que el código de comercio sea el adecuado o se puede encontrar con problemas no deseados al momento de realizar compras. Como no hay forma de saber si el código de comercio está habilitado para webpay plus es mejor preguntar a Transbank directamente antes de enviar los certificados de producción.
+
+Al configurar mal el código de comercio puede aparecer un error similar a
+
+"No se puede acceder a la dirección https://webpay2g.transbank.cl"
+
+<center><img src="img/1/fig16.png"></center>

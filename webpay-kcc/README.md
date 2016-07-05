@@ -1074,7 +1074,7 @@ Para esto se deben mover los archivos a un nuevo directorio
 	$ mkdir backup
 	$ mv *.* backup
 
-### Anexo D: Consideraciones al Pasar a Producción
+### Anexo F: Consideraciones al Pasar a Producción
 Se debe asegurar de que el código de comercio sea el adecuado o se puede encontrar con problemas no deseados al momento de realizar compras. Como no hay forma de saber si el código de comercio está habilitado para webpay plus es mejor preguntar a Transbank directamente antes de enviar los certificados de producción.
 
 Al configurar mal el código de comercio puede aparecer un error similar a
@@ -1083,5 +1083,5 @@ Al configurar mal el código de comercio puede aparecer un error similar a
 
 <center><img src="img/1/fig16.png"></center>
 
-### Anexo F: CICR y CIC
+### Anexo G: CICR y CIC
 Normalmente los plugins disponibles y la configuración de esta guía operan bajo la modalidad de CICR (Cuotas iguales y conocidas RELOADED). Por lo que se recomienda de que los comercios obtengan ese tipo de contrato. El otro tipo de contrato CIC (Cuotas iguales y conocidas) obliga al comercio a implementar en el formulario de pago la selección de cuotas y enviar dos nuevos parametros a Transbank *TBK_MONTO_CUOTA* (valor de cada cuota) y *TBK_NUMERO_CUOTAS* (cantidad de cuotas). Implementar CIC implica trabajo que puede ser evitado simplemente cambiando el contrato a CICR, dejando a Transbank la tarea de calcular el monto y el número de las cuotas.

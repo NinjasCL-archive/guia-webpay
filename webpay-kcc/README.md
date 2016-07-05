@@ -1082,3 +1082,6 @@ Al configurar mal el código de comercio puede aparecer un error similar a
 "No se puede acceder a la dirección https://webpay2g.transbank.cl"
 
 <center><img src="img/1/fig16.png"></center>
+
+### Anexo F: CICR y CIC
+Normalmente los plugins disponibles y la configuración de esta guía operan bajo la modalidad de CICR (Cuotas iguales y conocidas RELOADED). Por lo que se recomienda de que los comercios obtengan ese tipo de contrato. El otro tipo de contrato CIC (Cuotas iguales y conocidas) obliga al comercio a implementar en el formulario de pago la selección de cuotas y enviar dos nuevos parametros a Transbank *TBK_MONTO_CUOTA* (valor de cada cuota) y *TBK_NUMERO_CUOTAS* (cantidad de cuotas). Implementar CIC implica trabajo que puede ser evitado simplemente cambiando el contrato a CICR, dejando a Transbank la tarea de calcular el monto y el número de las cuotas.

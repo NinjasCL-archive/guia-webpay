@@ -640,7 +640,7 @@ URLCGITRA | /filtroUnificado/bp_revision.cgi | Ruta Relativa a bp_revision.cgi a
 URLCGIMEDTRA | /filtroUnificado/bp_validacion.cgi  | Ruta relativa a bp_validacion.cgi alojado en Transbank. Para producción su valor debe ser /cgi/bp_validacion.cgi
 SERVERTRA | https://certificacion.webpay.cl  | Dirección del servidor de Transbank. Incluir https. Dirrección de produccion https://webpay.transbank.cl
 PORTTRA |  6443 | Puerto del servidor de Transbank. Puerto de producción 443
-PREFIJO_CONF_TR | HTML_  | Prefijo que contiene el nombre del parámetro que indica cual es la página que se ejecuta en el comercio para confirmar la transacción. Valor recomendado HTML_
+PREFIJO_CONF_TR | HTML_  | Prefijo que contiene el nombre del parámetro que indica cual es la página que se ejecuta en el comercio para confirmar la transacción. Valor recomendado HTML_
 HTML_TR_NORMAL | -  | Ruta absoluta donde esta alojada la página de confirmación de la transacción en el servidor del comercio. No puede tener https. 
 
 A continuación se muestra un ejemplo de configuración
@@ -773,18 +773,19 @@ El contenido del documento solicita la información mostrada a continuación.
 ### Adicionalmente se deben responder una serie de preguntas
 
 - Flujo Pago Exitoso Sin Cuotas  
-- Flujo Pago Exitoso 3 Cuotas Sin Interés
-- Flujo de Pago Exitoso 4 Cuotas (normales, con interés)
-- Flujo de Pago Exitoso con Tarjeta de Débito RedCompra
-- Flujo de Pago Fracaso con tarjeta de crédito MasterCard
-- Validación de Orden de Compra
-- Validación de Página de Cierre
+- Flujo Pago Exitoso 3 Cuotas Sin Interés
+- Flujo de Pago Exitoso 4 Cuotas (normales, con interés)
+- Flujo de Pago Exitoso con Tarjeta de Débito RedCompra
+- Flujo de Pago Fracaso con tarjeta de crédito MasterCard
+- Validación de Orden de Compra
+- Validación de Página de Cierre
 
 
 Para facilitar la entrega de datos se ha creado una plantilla de ejemplo disponible en [examples/Evidencia Comercio](examples/) en formato pdf, docx y pages. La cual contiene más detalles sobre como llenar la información y responder las preguntas.
 
 También se ha creado un ejemplo de formulario html para realizar la "Evidencia 6: Validación de Orden de Compra". Puede ser [descargado de este link](code/helpers/evidencia6.html).
 
+Es importante que en las imágenes aparezcan todos los datos de la transacción.  Transbank puede rechazar el documento si las imágenes estan incompletas o le faltan datos. Una buena herramienta para sacar capturas de pantalla de página completa es [Fireshot](http://getfireshot.com).
 
 Una vez que soporte pruebe los datos enviarán al sitio a certificación, proceso que tardará entre 24 a 48 horas.
 
@@ -998,9 +999,9 @@ Ejemplo:
 Al hacer pruebas siempre se deben utilizar alguna de las cuentas establecidas en el manual. A continuación se copian los datos.
 
 Para autenticar, el usuario (RUT) a ingresar es **11.111.111-1** (nueve veces el número 1) y la clave es **123**.
-Una vez autenticados, dentro del emisor podrán aceptar ó rechazar la transacción.
+Una vez autenticados, dentro del emisor podrán aceptar ó rechazar la transacción.
 
-**Para pruebas con Tarjetas de Crédito**
+**Para pruebas con Tarjetas de Crédito**
 
 | * | VISA | MASTERCARD
 |--------|--------|--------|

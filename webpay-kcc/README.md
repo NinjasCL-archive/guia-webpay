@@ -1086,3 +1086,25 @@ Al configurar mal el código de comercio puede aparecer un error similar a
 
 ### Anexo G: CICR y CIC
 Normalmente los plugins disponibles y la configuración de esta guía operan bajo la modalidad de CICR (Cuotas iguales y conocidas RELOADED). Por lo que se recomienda de que los comercios obtengan ese tipo de contrato. El otro tipo de contrato CIC (Cuotas iguales y conocidas) obliga al comercio a implementar en el formulario de pago la selección de cuotas y enviar dos nuevos parametros a Transbank *TBK_MONTO_CUOTA* (valor de cada cuota) y *TBK_NUMERO_CUOTAS* (cantidad de cuotas). Implementar CIC implica trabajo que puede ser evitado simplemente cambiando el contrato a CICR, dejando a Transbank la tarea de calcular el monto y el número de las cuotas.
+
+### Anexo H: TBK_CODIGO_AUTORIZACION y/o TBK_VCI
+Ambos códigos pueden contener letras además de números. Por lo que su validación debe considearlos como campos alfanuméricos y no solo numéricos. Normalmente sólo tendrán números, pero en pagos con tarjetas extranjeras pueden tener letras.
+
+### Anexo I: iOS
+Si se utiliza un WebView para mostrar el formulario de pago de webpay puede arrojar error al cargar ciertas urls. Se recomienda ignorarlas en el delegate del WebView
+
+```objective-c
+- (void) webView: (UIWebView *) webView didFailLoadWithError: (NSError *) error {
+    
+    if([error.userInfo[@"NSErrorFailingURLStringKey"] rangeOfString:@"https://webpay3g.transbank.cl/webpaymobile/redirect.cgi?_timestamp="].location != NSNotFound ||
+       
+       [error.userInfo[@"NSErrorFailingURLStringKey"] rangeOfString:@"https://webpay3g.transbank.cl/webpaymobile/clock2g.cgi?_timestamp="].location != NSNotFound ||
+       
+       [error.userInfo[@"NSErrorFailingURLStringKey"] rangeOfString:@"https://certificacion.webpay.cl:6443/webpaymobile/redirect.cgi?_timestamp="].location != NSNotFound ||
+       
+       [error.userInfo[@"NSErrorFailingURLStringKey"] rangeOfString:@"https://certificacion.webpay.cl:6443/webpaymobile/clock2g.cgi?_timestamp="].location != NSNotFound) {
+        
+        return;
+    }
+...
+}

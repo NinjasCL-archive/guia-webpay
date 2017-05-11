@@ -3,7 +3,7 @@ Este repositorio contiene distintas guías para aprender a utilizar el sistema d
 
 Fecha: Enero 2014, Mayo, Septiembre, Noviembre 2015, Febrero 2016
 
-Autor: Camilo Castro <camilo@cervezapps.cl>
+Autor: Camilo Castro <camilo@ninjas.cl>
 
 Versión: 1.3.0
 

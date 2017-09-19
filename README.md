@@ -40,8 +40,10 @@ Transbank tiene dos productos para permitir la recepción de pagos. El primero e
 
 **Importante**
 
-    KCC ha sido catalogado como obsoleto. Esto quiere decir que nuevas integraciones deben usar SOAP obligatoriamente.
-    
+```
+KCC ha sido catalogado como obsoleto. 
+Esto quiere decir que nuevas integraciones deben usar SOAP obligatoriamente.
+```    
 
 ### ¿Qué es *OneClick*?
 Webpay OneClick permite mejorar la experiencia de compra del usuario, permitiendo que éste registre una única vez los datos de su tarjeta, una vez realizado el proceso es posible comprar con la agilidad de un click. Funciona utilizando SOAP.

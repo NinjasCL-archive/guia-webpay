@@ -1,4 +1,9 @@
-# Guía de instalación WebPay KCC en Linux
+# Importante 
+
+**KCC** fue marcado como obsoleto por Transbank. Solamente integraciones con SOAP son autorizadas.
+Este texto permite entender el proceso en forma general y puede ser aplicado en SOAP.
+
+## Guía de instalación WebPay KCC en Linux
 
 Una pequeña guía para instalar el sistema de pago de Transbank.
 La instalación de webpay que se detalla a continuación se ha probado exitosamente en un servidor compartido (shared hosting) con Linux.

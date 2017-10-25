@@ -55,6 +55,7 @@ Si no se desea tener un contrato directo con Transbank se puede utilizar los sig
 - [Flow.cl](http://www.flow.cl)
 - [Khipu](http://www.khipu.cl)
 - [Uanbai](http://www.uanbai.cl)
+- [Pago Fácil](https://www.pagofacil.org/)
 - [Multicaja.cl](http://www.multicaja.cl) (Paypal)
 
 ## Otros Materiales
